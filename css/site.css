@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #1d5888;
+    --secondary-color: #d8b2a7;
+    --dark-color: #292929;
+    --white-color: #e7e7e7;
+    --purp-color: #230244;
+    --org-color: #FF993B;
+}
+
+body {
+    background: linear-gradient(to right, #d3cce3, #e9e4f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+@media only screen and (max-width: 400px) {
+div.copyright {
+    font-size: 14px;
+}
+}
+
+body {
+    color: var(--dark-color);
+}
+
+nav {
+    background-color: var(--dark-color);
+}
+
+footer {
+    background-color: var(--white-color);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--primary-color)
+}
+
+main>.container {
+    padding: 60px 15px 0;
+}
+.sticky-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100% ;
+}
+
+footer {
+    padding-right: 1rem;
+}
+
+footer .social>a {
+    color: var(--white-color);
+    opacity: 0.75;
+}
+
+footer .social>a:hover {
+opacity: 0.9;
+
+}
+
+.bsicon{
+    color: #8312FA;
+    }
+    
+    .jsicon{
+    color: #F0DB4F;
+    }
+    
+    .html5icon{
+    color: #E44D26;
+    }
+    
+    .cssicon{
+    color: #0A71B8;
+    }
+
+    .checklist >li i {
+        color: var(--org-color)
+    }
+
+    code[class="language-"],
+
+pre[class="language-"]  {
+
+    white-space: pre-wrap;
+
+    word-break: break-all;
+
+    word-wrap: break-word;
+
+    font-size: 1.5rem; /* 1em */
+
+}
