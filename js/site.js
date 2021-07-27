@@ -1,1 +1,3 @@
-console.log("Hello World");
+function GenerateTableData() {
+    console.log("Hello from JS")
+}

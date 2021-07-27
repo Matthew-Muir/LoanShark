@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project By Matthew Muir</title>
+    <title>Loan Shark: A Coding Project By Matthew Muir</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,7 +24,7 @@
 <!--Nav Section-->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand mt-1" style="font-family: 'Bebas Neue', cursive;"><img style="margin-right: 12px;" src="/img/whitefavicon.png" class="d-inline-block align-text-top" height="25">App Name</a>
+        <a class="navbar-brand mt-1" style="font-family: 'Bebas Neue', cursive;"><img style="margin-right: 12px;" src="/img/whitefavicon.png" class="d-inline-block align-text-top" height="25">Loan Shark</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,52 @@
 </nav>
 <!--Main Section-->
 <main class="flex-shrink-0">
-    <div class="container mt-4"></div>
+    <div class="container mt-4">
+
+        <div class="row">
+            <div class="col-5">
+                <form class="row">
+                    <div class="col-12 pb-2 pt-2">
+                        <input class="form-control" type="number" id="loanAmount" placeholder="$1,000">
+                    </div>
+                    <div class="col-12 pb-2">
+                        <input class="form-control" type="number" id="loanTerm" placeholder="60 months">
+                    </div>
+                    <div class="col-12 pb-2">
+                        <input class="form-control" type="number" id="rate" placeholder="3%">
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-md btn-outline-dark" id="btnSubmit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-7">
+                <h1>Where the breakdown goes</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="table-responsive">
+                    <table class="table table-striped table-light">
+                        <thead>
+                            <tr>
+                                <th>Month</th>
+                                <th>Payment</th>
+                                <th>Principal</th>
+                                <th>Interest</th>
+                                <th>Interest Paid</th>
+                                <th>Loan Remainder</th>
+                            </tr>
+                        </thead>
+                        <tbody id="results"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
 </main>
     <!--Footer Section-->
     <footer class="footer mt-auto py-3 sticky-footer bg-dark">
@@ -80,5 +125,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <script src="js/site.js"></script>
-</body>
+    <script>document.getElementById("btnSubmit").addEventListener("click", GenerateTableData);</script>
+
+ </body>
 </html>

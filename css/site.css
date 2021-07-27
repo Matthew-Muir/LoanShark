@@ -6,6 +6,9 @@
     --purp-color: #230244;
     --org-color: #FF993B;
 }
+th,td {
+    text-align: center;
+}
 
 body {
     background: linear-gradient(to right, #d3cce3, #e9e4f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
