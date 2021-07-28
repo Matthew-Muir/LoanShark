@@ -58,15 +58,15 @@
             <div class="col-5">
                 <form class="row">
                     <div class="col-12 pb-2 pt-2">
-                        <input class="form-control" type="number" id="loanAmount" placeholder="$1,000">
+                        <input class="form-control" type="number" id="loanAmount" placeholder="$1,000" value="5000">
                     </div>
                     <div class="col-12 pb-2">
-                        <input class="form-control" type="number" id="loanTerm" placeholder="60 months">
+                        <input class="form-control" type="number" id="loanTerm" placeholder="60 months" value="60">
                     </div>
                     <div class="col-12 pb-2">
-                        <input class="form-control" type="number" id="rate" placeholder="3%">
+                        <input class="form-control" type="number" id="rate" placeholder="3%" value="3">
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 pb-2">
                         <button type="button" class="btn btn-md btn-outline-dark" id="btnSubmit">Submit</button>
                     </div>
                 </form>
@@ -125,7 +125,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <script src="js/site.js"></script>
-    <script>document.getElementById("btnSubmit").addEventListener("click", GenerateTableData);</script>
+    <script>document.getElementById("btnSubmit").addEventListener("click", BtnClickEventFunction);</script>
 
  </body>
 </html>
