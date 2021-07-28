@@ -41,7 +41,7 @@
                     <a class="nav-link" href="code.html">The Code</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" target="_blank" href="https://github.com/Matthew-Muir">Git Repo</a>
+                <a class="nav-link" target="_blank" href="https://github.com/Matthew-Muir/LoanShark">Git Repo</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" target="_blank" href="https:\\matt-m.netlify.app">About</a>
@@ -55,7 +55,7 @@
     <div class="container mt-4">
 
         <div class="row">
-            <div class="col-5">
+            <div class="col-5 border-1 border-end border-light">
                 <form class="row">
                     <div class="col-12 pb-2 pt-2">
                         <input class="form-control" type="number" id="loanAmount" placeholder="$5,000">
@@ -71,8 +71,21 @@
                     </div>
                 </form>
             </div>
-            <div class="col-7">
-                <h1>Where the breakdown goes</h1>
+            <div class="col-7 row d-flex ps-4 pe-4 border-1 border-end border-light">
+                
+                    <div class="col-12 text-center"><h1>Your Monthly Payments</h1></div>
+                    <div class="col-12 text-center"><h2 id="monthlyPayment"></h2></div>
+                    
+                    <div class="col-6"><h5>Total Principal</h5></div>
+                    <div class="col-6 text-end"><h5 id="totalPrincipal"></h5></div>
+
+                    <div class="col-6"><h5>Total Interest</h5></div>
+                    <div class="col-6 text-end"><h5 id="totalInterest"></h5></div>
+
+                    <div class="col-6"><h5>Total Cost</h5></div>
+                    <div class="col-6 text-end"><h5 id="totalCost"></h5></div>
+
+                
             </div>
         </div>
         <div class="row">
